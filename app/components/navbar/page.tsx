@@ -34,7 +34,7 @@ const Navbar = () => {
                     </div>
                     <div className="hidden lg:flex space-x-3 items-center font-semibold">
                         <Link href="#welcomeSection" onClick={handleScroll}>Home</Link>
-                        <Link href="#aboutSection" onClick={handleScroll}>About</Link>
+                        <Link href="#aboutUs" onClick={handleScroll}>About</Link>
                         <Link href="#serviceSection" onClick={handleScroll}>Service</Link>
                         <Link href="#portfolioSection" onClick={handleScroll}>Our Team</Link>
                         <Link href="#footer" onClick={handleScroll}>Contact</Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
                 <div className={isCollapse ? 'w-full h-0 px-5 flex flex-col items-center space-y-3 overflow-hidden transition-all duration-700 rounded-b-2xl bg-black/50 backdrop-blur-sm' : 'lg:hidden w-full px-5 flex flex-col items-center space-y-3 h-72 transition-all duration-700 overflow-hidden rounded-b-2xl bg-black/50 backdrop-blur-sm'}>
                     <div className='w-full h-1 bg-white rounded-full mb-3'></div>
                     <Link href="#welcomeSection" onClick={handleScroll}>Home</Link>
-                    <Link href="#aboutSection" onClick={handleScroll}>About</Link>
+                    <Link href="#aboutUs" onClick={handleScroll}>About</Link>
                     <Link href="#serviceSection" onClick={handleScroll}>Service</Link>
                     <Link href="#portfolioSection" onClick={handleScroll}>Our Team</Link>
                     <Link href="#footer" onClick={handleScroll}>Contact</Link>
