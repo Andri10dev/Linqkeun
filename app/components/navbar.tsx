@@ -6,6 +6,8 @@ import {
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import { faClose } from '@fortawesome/free-solid-svg-icons/faClose';
+import LogoLinqkeun from '../images/logo-linqkeun-white.png'
+import Image from 'next/image';
 
 const Navbar = () => {
     const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -28,15 +30,13 @@ const Navbar = () => {
     return (
         <>
             <nav className="w-full text-white fixed z-50">
-                <div className="bg-custom-blue/50 backdrop-blur-sm w-full h-16 flex items-center justify-between px-5 lg:px-10">
-                    <div className="font-semibold">
-                        Linqkeun
-                    </div>
+                <div className="bg-custom-blue/80 backdrop-blur-sm w-full h-16 flex items-center justify-between px-5 lg:px-10">
+                    <Image src={LogoLinqkeun} alt='Logo Linqkeun' className='w-32 aspect-video object-contain'></Image>
                     <div className="hidden lg:flex space-x-3 items-center font-semibold">
                         <Link href="#welcomeSection" onClick={handleScroll}>Home</Link>
                         <Link href="#aboutUs" onClick={handleScroll}>About</Link>
                         <Link href="#serviceSection" onClick={handleScroll}>Service</Link>
-                        <Link href="#portfolioSection" onClick={handleScroll}>Our Team</Link>
+                        {/* <Link href="#portfolioSection" onClick={handleScroll}>Our Team</Link> */}
                         <Link href="#footer" onClick={handleScroll}>Contact</Link>
                     </div>
                     <button type='button' onClick={toggleCollapse} className='lg:hidden flex items-center justify-center text-2xl relative'>
@@ -44,12 +44,12 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faClose} className={isCollapse ? 'absolute scale-0 -rotate-180 transition-all duration-300' : 'absolute scale-100 text-red-500 rotate-0 transition-all duration-500'} />
                     </button>
                 </div>
-                <div className={isCollapse ? 'w-full h-0 px-5 flex flex-col items-center space-y-3 overflow-hidden transition-all duration-700 rounded-b-2xl bg-black/50 backdrop-blur-sm' : 'lg:hidden w-full px-5 flex flex-col items-center space-y-3 h-72 transition-all duration-700 overflow-hidden rounded-b-2xl bg-black/50 backdrop-blur-sm'}>
+                <div className={isCollapse ? 'w-full h-0 px-5 flex flex-col items-center space-y-3 overflow-hidden transition-all duration-700 rounded-b-2xl bg-custom-blue/90 backdrop-blur-sm' : 'lg:hidden w-full px-5 flex flex-col items-center space-y-3 h-72 transition-all duration-700 overflow-hidden rounded-b-2xl bg-custom-blue/90 backdrop-blur-sm'}>
                     <div className='w-full h-1 bg-white rounded-full mb-3'></div>
                     <Link href="#welcomeSection" onClick={handleScroll}>Home</Link>
                     <Link href="#aboutUs" onClick={handleScroll}>About</Link>
                     <Link href="#serviceSection" onClick={handleScroll}>Service</Link>
-                    <Link href="#portfolioSection" onClick={handleScroll}>Our Team</Link>
+                    {/* <Link href="#portfolioSection" onClick={handleScroll}>Our Team</Link> */}
                     <Link href="#footer" onClick={handleScroll}>Contact</Link>
                 </div>
             </nav>

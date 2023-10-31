@@ -1,6 +1,6 @@
 import Title from "@/app/components/title"
 import Image from "next/image"
-import AboutImage from '../../images/about-img.jpg'
+import AboutImage from '../images/about-img.jpg'
 
 const AboutUs = () => {
     return (
