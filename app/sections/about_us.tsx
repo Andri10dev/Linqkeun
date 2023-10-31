@@ -4,7 +4,7 @@ import AboutImage from '../images/about-img.jpg'
 
 const AboutUs = () => {
     return (
-        <div id="aboutUs" className="w-full bg-custom-blue py-16">
+        <div id="aboutUs" className="w-full bg-custom-blue py-16 -mt-2">
             <Title name="About Us" color="white"></Title>
             <div className="flex flex-col md:flex-row items-center mt-10 px-5 md:px-0">
                 <div className="md:w-1/2 md:pl-10">
