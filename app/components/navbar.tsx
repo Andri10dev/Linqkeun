@@ -35,7 +35,8 @@ const Navbar = () => {
                     <div className="hidden lg:flex space-x-3 items-center font-semibold">
                         <Link href="#welcomeSection" onClick={handleScroll}>Home</Link>
                         <Link href="#aboutUs" onClick={handleScroll}>About</Link>
-                        <Link href="#serviceSection" onClick={handleScroll}>Service</Link>
+                        <Link href="#serviceSection" onClick={handleScroll}>Our Service</Link>
+                        <Link href="#featureSection" onClick={handleScroll}>Feature</Link>
                         {/* <Link href="#portfolioSection" onClick={handleScroll}>Our Team</Link> */}
                         <Link href="#footer" onClick={handleScroll}>Contact</Link>
                     </div>
@@ -49,6 +50,7 @@ const Navbar = () => {
                     <Link href="#welcomeSection" onClick={handleScroll}>Home</Link>
                     <Link href="#aboutUs" onClick={handleScroll}>About</Link>
                     <Link href="#serviceSection" onClick={handleScroll}>Service</Link>
+                    <Link href="#featureSection" onClick={handleScroll}>Feature</Link>
                     {/* <Link href="#portfolioSection" onClick={handleScroll}>Our Team</Link> */}
                     <Link href="#footer" onClick={handleScroll}>Contact</Link>
                 </div>
